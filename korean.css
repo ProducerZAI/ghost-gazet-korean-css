@@ -1,0 +1,192 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --font-heading:"Noto Sans KR","Noto Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --font-body:"Noto Sans KR","Noto Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --gh-font-heading:"Noto Sans KR";
+  --gh-font-body:"Noto Sans KR";
+}
+
+/* 기본 */
+body{
+  font-family:var(--font-body)!important;
+  letter-spacing:-.025em;
+  word-break:keep-all;
+}
+
+h1,h2,h3,h4,h5,h6,
+[data-post-card-title]{
+  font-family:var(--font-heading)!important;
+  font-weight:600!important;
+  letter-spacing:-.045em;
+  line-height:1.24!important;
+}
+
+/* 홈 메인 제목 */
+.home-template section[data-hero-posts] article:first-child h1[data-post-card-title]{
+  font-size:clamp(1.8rem,2.5vw,2.75rem)!important;
+  line-height:1.18!important;
+  font-weight:600!important;
+}
+
+/* 홈 카드 제목 */
+.home-template h3[data-post-card-title]{
+  font-size:1.2rem!important;
+  line-height:1.32!important;
+  font-weight:600!important;
+}
+
+.home-template [data-hero-posts] .flex-1 h3[data-post-card-title]{
+  font-size:1.14rem!important;
+}
+
+/* 카드 요약 */
+[data-post-card-excerpt]{
+  font-size:.95rem!important;
+  line-height:1.65!important;
+  font-weight:400!important;
+}
+
+/* 카드/기사 메타 */
+[data-post-card-meta],
+.gh-post-meta,
+.gh-article-meta,
+[data-post-meta]{
+  font-size:13.5px!important;
+  letter-spacing:-.015em;
+}
+
+/* By 완전 제거 */
+.font-body.lowercase.italic,
+[data-post-card-authors] > span:first-child,
+.gh-post-meta > span:first-child,
+.gh-article-meta > span:first-child,
+[data-post-meta] > span:first-child{
+  display:none!important;
+}
+
+[data-post-card-authors] a{
+  margin-left:0!important;
+}
+
+/* 날짜 구분자 */
+[data-post-card-date] span{
+  opacity:.35;
+}
+
+/* 기사 제목 */
+.post-template main h1,
+.page-template main h1{
+  font-size:clamp(1.75rem,2.35vw,2.65rem)!important;
+  line-height:1.23!important;
+  font-weight:600!important;
+  letter-spacing:-.05em;
+}
+
+/* 기사 본문 폭 */
+.post-template .gh-content,
+.page-template .gh-content{
+  max-width:760px;
+  margin:0 auto;
+}
+
+/* 기사 본문 */
+.post-template main p,
+.page-template main p{
+  font-size:19px!important;
+  line-height:1.85!important;
+  letter-spacing:-.03em;
+  font-weight:400!important;
+}
+
+/* Ghost / Gazet 제거 */
+[data-footer-ghost],
+[data-footer-theme]{
+  display:none!important;
+}
+
+/* 한국어 UI */
+[data-ghost-search] span,
+a[href="/signin/"] span,
+a[href="/signup/"] span,
+button[type="submit"] span:not(.hidden),
+.nav-sign-up span,
+[data-menu] span.text-sm.font-medium,
+[data-writers] [data-section-title],
+[data-writers] a[href="/writers/"] span,
+[data-newsletters] h2 span:last-child,
+[data-newsletter-preview] span,
+[data-newsletters] button[x-text]{
+  font-size:0!important;
+}
+
+[data-ghost-search] span::after{content:"검색";font-size:14px!important;}
+a[href="/signin/"] span::after{content:"로그인";font-size:14px!important;}
+a[href="/signup/"] span::after,
+button[type="submit"] span:not(.hidden)::after{content:"구독하기";font-size:14px!important;}
+.nav-sign-up span::after{content:"회원가입";font-size:15px!important;}
+[data-menu] span.text-sm.font-medium::after{content:"팔로우";font-size:14px!important;}
+[data-writers] [data-section-title]::after{content:"필진";font-size:clamp(1.5rem,2.4vw,2.4rem)!important;}
+[data-writers] a[href="/writers/"] span::after{content:"전체보기";font-size:13px!important;}
+[data-newsletters] h2 span:last-child::after{content:"뉴스레터";font-size:1.25rem!important;}
+[data-newsletter-preview] span::after{content:"미리보기";font-size:12px!important;}
+[data-newsletters] button[x-text]::after{content:"전체 선택";font-size:12px!important;}
+
+/* 필자 링크 문구 */
+a[href*="/author/"] span{
+  font-size:0!important;
+}
+a[href*="/author/"] span::after{
+  content:"기사 모아보기";
+  font-size:12px!important;
+}
+
+/* 푸터 secondary 메뉴 숨김 */
+[data-footer] [data-nav="secondary"]{
+  display:none!important;
+}
+
+/* 푸터 */
+.footer-info-wrap{
+  max-width:980px!important;
+  margin:0 auto!important;
+}
+
+.footer-info{
+  font-size:14px!important;
+  line-height:1.8!important;
+  letter-spacing:-.02em;
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.45rem .8rem;
+}
+
+.footer-info span{
+  white-space:nowrap;
+}
+
+/* 모바일 */
+@media(max-width:767px){
+  .home-template section[data-hero-posts] article:first-child h1[data-post-card-title]{
+    font-size:1.8rem!important;
+  }
+
+  .home-template h3[data-post-card-title]{
+    font-size:1.12rem!important;
+  }
+
+  .post-template main h1,
+  .page-template main h1{
+    font-size:1.9rem!important;
+    line-height:1.25!important;
+  }
+
+  .post-template main p,
+  .page-template main p{
+    font-size:17px!important;
+    line-height:1.8!important;
+  }
+}
+</style>
