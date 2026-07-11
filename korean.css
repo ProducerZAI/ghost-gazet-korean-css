@@ -126,7 +126,7 @@ a[href="/signup/"] span::after,
 button[type="submit"] span:not(.hidden)::after{content:"구독하기";font-size:14px!important;}
 .nav-sign-up span::after{content:"회원가입";font-size:15px!important;}
 [data-menu] span.text-sm.font-medium::after{content:"팔로우";font-size:14px!important;}
-[data-writers] [data-section-title]::after{content:"필진";font-size:clamp(1.5rem,2.4vw,2.4rem)!important;}
+[data-writers] [data-section-title]::after{content:"필진";font-size:clamp(1.25rem,2vw,2rem)!important;}
 [data-writers] a[href="/writers/"] span::after{content:"전체보기";font-size:13px!important;}
 [data-newsletters] h2 span:last-child::after{content:"뉴스레터";font-size:1.25rem!important;}
 [data-newsletter-preview] span::after{content:"미리보기";font-size:12px!important;}
