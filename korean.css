@@ -166,6 +166,12 @@ a[href*="/author/"] span::after{
   white-space:nowrap;
 }
 
+/* 필진 페이지 필자 소개글 */
+.page-writers main p{
+  font-size:14.5px!important;
+  line-height:1.55!important;
+}
+
 /* 모바일 */
 @media(max-width:767px){
   .home-template section[data-hero-posts] article:first-child h1[data-post-card-title]{
