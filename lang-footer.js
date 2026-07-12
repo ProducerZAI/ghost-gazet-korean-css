@@ -1,13 +1,13 @@
 (function() {
-  function placeWidget() {
-    var subscribeBtn = document.querySelector('a[href="/signup/"]');
-    if (!subscribeBtn || !subscribeBtn.parentElement) return false;
-    if (document.querySelector('.gtranslate_wrapper')) return true;
-    var wrapper = document.createElement('div');
-    wrapper.className = 'gtranslate_wrapper';
-    subscribeBtn.parentElement.insertBefore(wrapper, subscribeBtn);
-    return true;
-  }
+function placeWidget() {
+  var subscribeBtn = document.querySelector('a[href="/signup/"]');
+  if (!subscribeBtn || !subscribeBtn.parentElement) return false;
+  if (document.querySelector('.gtranslate_wrapper')) return true;
+  var wrapper = document.createElement('div');
+  wrapper.className = 'gtranslate_wrapper';
+  subscribeBtn.after(wrapper);
+  return true;
+}
   if (!placeWidget()) {
     var observer = new MutationObserver(function() {
       if (placeWidget()) observer.disconnect();
