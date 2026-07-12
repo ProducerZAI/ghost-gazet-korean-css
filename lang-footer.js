@@ -5,7 +5,7 @@ function placeWidget() {
   if (document.querySelector('.gtranslate_wrapper')) return true;
   var wrapper = document.createElement('div');
   wrapper.className = 'gtranslate_wrapper';
-  subscribeBtn.after(wrapper);
+  subscribeBtn.parentElement.insertBefore(wrapper, subscribeBtn); // 여기서 구독하기 바로 앞에 삽입
   return true;
 }
   if (!placeWidget()) {
