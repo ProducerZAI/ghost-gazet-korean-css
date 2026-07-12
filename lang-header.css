@@ -1,8 +1,33 @@
-.gtranslate_wrapper .gt-current-lang span:not(.gt-flag),
-.gtranslate_wrapper [class*="gt"] span:not([class*="flag"]):not([class*="img"]) {
-  display: none !important;
-}
 .gtranslate_wrapper {
   display: inline-flex !important;
   align-items: center;
+  position: relative;
+}
+.gtranslate_wrapper > a.glink {
+  display: none !important;
+}
+.gtranslate_wrapper > a.glink.gt-current-lang {
+  display: inline-flex !important;
+}
+.gt-flag-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  border-radius: 6px;
+  padding: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
+  width: 168px;
+  z-index: 9999;
+}
+.gt-flag-menu a.glink {
+  display: inline-flex !important;
+}
+.gtranslate_wrapper.gt-open .gt-flag-menu {
+  display: flex;
 }
