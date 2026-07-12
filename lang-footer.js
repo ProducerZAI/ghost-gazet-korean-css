@@ -1,4 +1,3 @@
-<script>
 (function() {
   function placeWidget() {
     var subscribeBtn = document.querySelector('a[href="/signup/"]');
@@ -16,4 +15,3 @@
     observer.observe(document.body, { childList: true, subtree: true });
   }
 })();
-</script>
