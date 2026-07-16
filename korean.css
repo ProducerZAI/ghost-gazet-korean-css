@@ -206,3 +206,8 @@ a[href*="/author/"] span::after{
   font-size:14px!important;
   line-height:1.6!important;
 }
+
+/* 작가 소개 박스 - 텍스트 폭 제한 해제 (오른쪽 여백 제거) */
+[data-author-box] .max-w-100{
+  max-width:none!important;
+}
