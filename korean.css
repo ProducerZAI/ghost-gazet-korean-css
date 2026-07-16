@@ -212,7 +212,3 @@ a[href*="/author/"] span::after{
   max-width:none!important;
 }
 
-:root {
-  --logo-h-mobile: 30x;
-  --logo-h-desktop: 50px;
-}
