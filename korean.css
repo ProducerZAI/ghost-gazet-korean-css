@@ -211,3 +211,8 @@ a[href*="/author/"] span::after{
 [data-author-box] .max-w-100{
   max-width:none!important;
 }
+
+:root {
+  --logo-h-mobile: 20px;
+  --logo-h-desktop: 36px;
+}
