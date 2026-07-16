@@ -203,7 +203,7 @@ a[href*="/author/"] span::after{
 
 /* 작가 소개 박스 - 본문 폰트 크기 상속 방지 */
 .post-template main section[data-author-box] p{
-  font-size:14px!important;
+  font-size:15px!important;
   line-height:1.6!important;
 }
 
