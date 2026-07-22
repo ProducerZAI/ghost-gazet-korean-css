@@ -96,6 +96,13 @@ h1,h2,h3,h4,h5,h6,
   margin:0 auto;
 }
 
+/* 포스트 상단 요약(excerpt) — 본문과 구분되도록 작고 옅게 */
+[data-post-hero-content] > h1 + p{
+  font-size:12px!important;
+  line-height:1.375!important;
+  opacity:.7!important;
+}
+
 /* 기사 본문 */
 .post-template main p,
 .page-template main p{
@@ -210,5 +217,11 @@ a[href*="/author/"] span::after{
 /* 작가 소개 박스 - 텍스트 폭 제한 해제 (오른쪽 여백 제거) */
 [data-author-box] .max-w-100{
   max-width:none!important;
+}
+
+/* 하위 리스트만 들어있는 빈 항목의 마커 제거 (이중 불릿 방지) */
+.ghost-content li:has(> ul:only-child),
+.ghost-content li:has(> ol:only-child){
+  list-style:none!important;
 }
 
