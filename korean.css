@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* 포스트 상단 요약(excerpt) — 본문과 구분되도록 작고 옅게 */
-[data-post-hero-content] > h1 + p{
+.post-template [data-post-hero-content] > h1 + p{
   font-size:12px!important;
   line-height:1.375!important;
   opacity:.7!important;
