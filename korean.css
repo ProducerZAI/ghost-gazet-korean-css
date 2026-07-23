@@ -22,6 +22,12 @@ h1,h2,h3,h4,h5,h6,
   line-height:1.24!important;
 }
 
+
+/* 헤더 로고 크기 축소 */
+:root{
+  --logo-h-desktop: 48px;
+}
+
 /* 홈 메인 제목 */
 .home-template section[data-hero-posts] article:first-child h1[data-post-card-title]{
   font-size:clamp(1.4rem,2vw,2.25rem)!important;
